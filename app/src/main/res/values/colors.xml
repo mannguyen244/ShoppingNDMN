@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f1f1f1</color>
+    <color name="colorPrimaryDark">#666666</color>
+    <color name="colorAccent">#cc181e</color>
+    <color name="gray">#b1b1b1</color>
+
+    <!--Screen background colors-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <color name="bg_wellcome">#efc681</color>
+
+    <!--dots inactive colors-->
+    <color name="dark_dot_screen1">#d1395c</color>
+    <color name="dark_dot_screen2">#14a895</color>
+    <color name="dark_dot_screen3">#2278d4</color>
+    <color name="dark_dot_screen4">#a854d4</color>
+
+    <color name="dark_dot_wellcome">#C35617</color>
+    <color name="dark_text">#0a1326</color>
+    <color name="light_text">#132140</color>
+    <color name="dots_inactive">#FFFFFF</color>
+
+
+    <!--dots active color-->
+    <color name="light_dot_screen1">#f98da5</color>
+    <color name="light_dot_screen2">#8cf9eb</color>
+    <color name="light_dot_screen3">#93c6fd</color>
+    <color name="light_dot_screen4">#e4b5fc</color>
+
+    <color name="light_dot_wellcome">#FBB117</color>
+
+    <!--list of dots active-->
+    <array name="array_dots_active">
+        <item>@color/light_dot_screen1</item>
+        <item>@color/light_dot_screen2</item>
+        <item>@color/light_dot_screen3</item>
+        <item>@color/light_dot_screen4</item>
+        <item>@color/light_text</item>
+    </array>
+    <array name="arr_dots_active">
+        <item>@color/light_text</item>
+        <item>@color/light_dot_wellcome</item>
+        <item>@color/light_text</item>
+        <item>@color/light_dot_wellcome</item>
+        <item>@color/light_text</item>
+    </array>
+
+    <!--list of array dots inactive-->
+    <array name="array_dots_inactive">
+        <item>@color/dark_dot_screen1</item>
+        <item>@color/dark_dot_screen2</item>
+        <item>@color/dark_dot_screen3</item>
+        <item>@color/dark_dot_screen4</item>
+        <item>@color/dark_text</item>
+    </array>
+
+    <array name="arr_dots_inactive">
+        <item>@color/dark_dot_screen3</item>
+        <item>@color/dark_dot_wellcome</item>
+        <item>@color/dark_dot_screen3</item>
+        <item>@color/dark_dot_wellcome</item>
+        <item>@color/dark_dot_screen3</item>
+    </array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ProductDetailActivity">
+
+    <item
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Giỏ hàng"
+        android:id="@+id/mnu_cart"
+        app:showAsAction="always" />
+    <!--<item-->
+        <!--android:icon="@drawable/ic_home"-->
+        <!--android:title="Trở về trang chủ"-->
+        <!--app:showAsAction="never" />-->
+    <!--<item-->
+        <!--android:icon="@drawable/ic_report_problem_black_24dp"-->
+        <!--android:title="Tố cáo sản phẩm"-->
+        <!--app:showAsAction="never" />-->
+</menu>

@@ -1,0 +1,255 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Linear CHa-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1f000000"
+        android:orientation="vertical">
+
+        <!--CardView Slide-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSile"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPagerSlideHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/dotsSliderHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+        </android.support.v7.widget.CardView><!--End CardView Slide-->
+
+        <!--Start Tìm kiếm phố biến-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txtTKPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:text="TÌM KIẾM PHỔ BIẾN"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTrangThaiCapNhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/txtTKPB"
+                android:text="trạng thái cập nhật" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewSearchPopular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+        <!--End Tìm kiếm phổ biến-->
+
+        <!--Start Flash Sale-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txtFlashSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:text="FLASH SALE"
+                android:textColor="#FBB117"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtHH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtFlashSale"
+                android:background="#7f000000"
+                android:text="hh"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtHaiCham1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtHH"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txtMM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtHaiCham1"
+                android:background="#7f000000"
+                android:text="mm"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtHaiCham2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtMM"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txtSS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtHaiCham2"
+                android:background="#7f000000"
+                android:text="ss"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnXemTatCa1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_extra"
+                android:paddingBottom="20dp"
+                android:text="Xem Tất Cả"
+                android:textColor="#FBB117"
+                android:textSize="12dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewFlashSale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp" />
+        </RelativeLayout>
+        <!--End Flash Sale-->
+
+        <!--Start Shopping Mall-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txtShoppingMall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:text="Shopping Mall"
+                android:textColor="#F00"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnXemTatCaShoppingMall"
+                android:layout_width="85dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_extra_shopping_mall"
+                android:drawableEnd="@drawable/ic_extra2"
+                android:paddingLeft="8dp"
+                android:text="Xem Thêm"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+            <!-- <HorizontalScrollView
+                 android:layout_width="match_parent"
+                 android:fillViewport="true"
+                 android:layout_height="match_parent">
+
+             </HorizontalScrollView>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewShoppingMall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp" />
+
+        </RelativeLayout>
+        <!--End Shopping Mall-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txtGoiYHomNay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:text="GỢI Ý HÔM NAY"
+                android:textColor="#FBB117"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCapNhatGYHM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtGoiYHomNay"
+                android:text="Trạng thái cập nhật" />
+
+            <Button
+                android:id="@+id/btnGoiYHomNay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_extra"
+                android:paddingBottom="20dp"
+                android:text="Xem Thêm"
+                android:textColor="#FBB117"
+                android:textSize="12dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewGoiYHomNay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp" />
+        </RelativeLayout>
+        <!--End Flash Sale-->
+
+
+        <!--end Liner cha-->
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

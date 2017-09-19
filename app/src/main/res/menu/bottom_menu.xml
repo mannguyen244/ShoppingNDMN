@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnu_bottom_shopping"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Mua sắm" />
+
+    <!--<item-->
+        <!--android:id="@+id/mnu_bottom_notify"-->
+        <!--android:icon="@drawable/ic_notifications_none_black_24dp"-->
+        <!--android:title="Thông báo" />-->
+
+    <item
+        android:id="@+id/mnu_bottom_chat"
+        android:icon="@drawable/ic_chat_bubble_outline_black_24dp"
+        android:title="Chat Shop" />
+
+    <item
+        android:id="@+id/mnu_bottom_cart"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Đơn hàng" />
+</menu>
